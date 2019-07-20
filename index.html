@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Triangle - another Try</title>
+  </head>
+  <body>
+    <script>
+      var result = +prompt("Введите число больше нуля", 5);
+      var messageSymbol = "*";
+      var message = "";
+      var messFull = "";
+      if (isNaN(result) || result == 0) {
+        alert("Вы ввели не верные данные");
+      } else {
+        for (var i = 1; i <= result; i++) {
+          message += messageSymbol;
+          for (var j = 1; j <= result - result + 1; j++) {
+            messFull += message + "\n";
+          }
+        }
+        console.log(messFull);
+      }
+    </script>
+  </body>
+</html>
